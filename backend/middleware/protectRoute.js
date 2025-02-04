@@ -4,8 +4,8 @@ import User from "../models/user.model.js"
 const protectRoute = async(req,res,next)=>{
     try {
         const token = req.cookies.jwt; //converts requested cookie into a json web token 
-        if(!token){
-            return res.status(400).json({error:"Unauthorised: No token Provided"})
+        if(!token){ 
+            return res.status(400).json({error:"Unauthorised: No token Provided"}) 
         }
 
         const decoded = jwt.verify(token,process.env.JWT_SECRET); // verify whether the token matches with our JWT_SECRET key

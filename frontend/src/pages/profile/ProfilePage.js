@@ -5,6 +5,7 @@ import Posts from "../../components/common/Posts";
 import ProfileHeaderSkeleton from "../../components/skeletons/ProfileHeaderSkeleton";
 import EditProfileModal from "./EditProfileModal";
 
+import post from "../../../../backend/models/post.model"
 import { POSTS } from "../../utils/db/dummy";
 import useFollow from "../../hooks/useFollow"
 import { baseUrl } from "../../constant/url";
